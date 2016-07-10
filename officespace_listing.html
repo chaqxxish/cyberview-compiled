@@ -1,0 +1,843 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://url.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Title here" />
+    <meta property="og:description" content="Description here" />
+    <meta property="og:image" content="http://imgurl.com" />
+    <title>Title here</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '993161007428706',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+    
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+    
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+    
+
+    <header>
+      <div class="l-header">
+        <!-- Logo column -->
+        <div class="l-header__logo">
+          <a href="#"><img class="img-logo" src="./assets/img/img-logo-tagline.png"></a>
+        </div>
+    
+        <!-- Menu column -->
+        <div class="l-header__menu">
+          <nav class="nav--main">
+            <!-- First-level nav -->
+            <ul class="nav-first">
+              <!-- About -->
+              <li>
+                <a class="nav__link first-level" href="our_story.html">About</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>About</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="our_story.html">Our Story</a></li>
+                        <li><a class="nav__link second-level" href="management.html">Management</a></li>
+                        <li><a class="nav__link second-level" href="careers.html">Career</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Invest -->
+              <li>
+                <a class="nav__link first-level" href="invest_in_cyberjaya.html">Invest</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Invest</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="invest_in_cyberjaya.html">Invest in Cyberjaya</a></li>
+                        <li><a class="nav__link second-level" href="ecosystem.html">Cyberjaya Ecosystem</a></li>
+                        <li><a class="nav__link second-level" href="invest_relation_service.html">Our Investor Relations services</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Industry -->
+              <li>
+                <a class="nav__link first-level" href="programmes.html">Industry</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Industry</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li>
+                          <a class="nav__link second-level" href="livinglab_overview.html">Cyberview Living Lab</a>
+                          <!-- Third-level nav -->
+                          <ul class="nav-third">
+                            <li><a class="nav__link" href="talent.html">Talent</a></li>
+                            <li><a class="nav__link" href="livinglab_accelerator.html">Accelerator</a></li>
+                            <li><a class="nav__link" href="pilot.html">Pilot</a></li>
+                            <li><a class="nav__link" href="enterprise.html">Enterprise</a></li>
+                            <li><a class="nav__link" href="success_stories.html">Success Stories</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="nav__link second-level" href="privatepublic.html">Public - Private Collaboration</a></li>
+                        <li>
+                          <a class="nav__link second-level" href="smartcity.html">Smartcity</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Tech Hub Services -->
+              <li>
+                <a class="nav__link first-level" href="#">Tech Hub Services</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Tech Hub Services</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="#">Overview</a></li>
+                        <li>
+                          <a class="nav__link second-level" href="#">Services</a>
+                          <!-- Third-level nav -->
+                          <ul class="nav-third">
+                            <li><a class="nav__link" href="consultancy_services.html">Consultancy Services</a></li>
+                            <li><a class="nav__link" href="township_service.html">Cyberjaya Township Services</a></li>
+                            <li><a class="nav__link" href="officespace.html">Office Space</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="nav__link second-level" href="projects.html">Projects</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Events & Media -->
+              <li>
+                <a class="nav__link first-level" href="#">Events &amp; Media</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Events &amp; Media</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="events.html">Events</a></li>
+                        <li><a class="nav__link second-level" href="media.html">Media</a></li>
+                        <li><a class="nav__link second-level" href="resources.html">Resources</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Contact Us -->
+              <li><a class="nav__link first-level" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+    
+          <!-- Mobile navi will go here -->
+          <nav class="nav--mobile">
+            <ul class="vertical menu" data-accordion-menu data-multi-open="false">
+              <li>
+                <a class="nav__link" href="#">About</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Our Story</a></li>
+                  <li><a class="nav__link" href="#">Management</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Invest</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Invest in Cyberjaya</a></li>
+                  <li><a class="nav__link" href="#">Cyberjaya Ecosystem</a></li>
+                  <li><a class="nav__link" href="#">Our Investor Relations Services</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Industry</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Overview</a></li>
+                  <li>
+                    <a class="nav__link" href="#">Living Lab</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="nav__link" href="#">Living Lab Accelerator</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Enterprise</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Pilot</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Talent</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="nav__link" href="#">Public - Private Collaboration</a></li>
+                  <li>
+                    <a class="nav__link" href="#">Smartcity</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="nav__link" href="#">Link</a></li>
+                      <li><a class="nav__link" href="#">Projects</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="nav__link" href="#">Tech Hub Services</a></li>
+              <li><a class="nav__link" href="#">Events &amp; Media</a></li>
+              <li><a class="nav__link" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <!-- Hamburger buttton -->
+        <div class="l-header__hamburger">
+          <button class="button-menu" type="button"><i class="icon-menu"></i></button>
+        </div>
+    
+        <!-- Search column -->
+        <div class="l-header__search">
+          <button class="button-search"><i class="icon-search"></i></button>
+        </div>
+      </div>
+    </header>
+    
+
+    
+    <div class="l-banner--page no-image">
+      <div class="banner--page">
+        <div class="banner__content">
+          <div class="banner__content__header">
+            <div class="header-box--social">
+              <p class="header-box__prehead">Office Space</p>
+              <h2 class="txt-green">CoPlace 1</h2>
+            </div>
+          </div>
+        </div>
+        <div class="share">
+          <button class="share__toggle"><i class="icon-share"></i></button>
+          <a href="javascript:void(0);" class="share__facebook mui-enter"><i class="icon-facebook"></i></a>
+          <a href="javascript:void(0);" class="share__twitter mui-enter"><i class="icon-twitter"></i></a>
+          <a href="javascript:void(0);" class="share__email mui-enter"><i class="icon-email"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <section class="l-section">
+      <div class="content-box--one">
+        <div class="columns">
+          <div class="page--subheader">
+            <ul>
+              <li>
+                <p>
+                  No. of Units: <strong>139</strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Available: <strong>20</strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Rental Rate: <strong>MYR 2.50 per sq. ft</strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Unit Size: <strong>Min 699 sq. ft</strong>
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p>
+                  <i class="icon2-marker"></i>
+                  <strong>Sme Technopreneur Centre, 2270 Jalan Usahawan 2, 63000 Cyberjaya</strong>
+                  <a href="#" class="link-text">
+                    View in Map
+                    <span class="icon icon-chevron-thin-right"></span>
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section bg-grey">
+      <div class="l-tabs tabs-nomargin">
+        <div class="content-box--one">
+          <div class="columns">
+            <ul class="tabs" data-tabs id="tabs-event">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Overview</a></li>
+              <li class="tabs-title"><a href="#panel2">Office Layout</a></li>
+              <li class="tabs-title"><a href="#panel3">Tenants Directory</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="tabs-content" data-tabs-content="tabs-event">
+      <!-- Tab Panel -->
+      <div class="tabs-panel is-active" id="panel1">
+        <section class="l-section bg-grey">
+          <div class="content-box--one">
+            <div class="columns">
+              <ul class="carousel-withthumbnails">
+                <li>
+                  <img src="http://placehold.it/970x560/200?text=Slider1" alt="Image">
+                  <p>Test</p>
+                </li>
+              </ul>
+              <ul class="carousel-withthumbnails-thumbnails">
+                <li>
+                  <img src="http://placehold.it/320x190/200?text=Slider1" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider1" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/300?text=Slider2" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider2" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/400?text=slider3" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider3" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/500?text=Slider4" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider4" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/600?text=slider5" alt="Image" data-url="http://www.youtube.com/embed/W7qWa52k-nE" data-type="iframe">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="l-section">
+          <div class="content-box--one">
+            <div class="columns">
+              <h3>Facilities</h3>
+            </div>
+          </div>
+          <div class="content-box--three">
+            <div class="columns">
+              <ul>
+                <li>Gymnasium/ Fitness Centre</li>
+                <li>Parking at open space and Basement Level</li>
+                <li>Internet Hotspots</li>
+                <li>Boardroom</li>
+                <li>Centralised Mailroom</li>
+                <li>Cafeteria and Prayer Room</li>
+              </ul>
+            </div>
+            <div class="columns">
+              <ul>
+                <li>Provision of Water Supply to each unit</li>
+                <li>'Open Skies' Policy for Telecommunications</li>
+                <li>Lift and Stairwells at strategic Locations</li>
+                <li>24 Hours Security Services</li>
+                <li>Accessible 24/7 by the Dedicated Transportation System</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="l-section bg-grey">
+          <div class="content-box--one">
+            <div class="columns text-center">
+              Browse through available spaces in the floor plan gallery.
+              <a href="#" class="button">View Vacancies</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    
+      <div class="tabs-panel" id="panel2">
+        <section class="l-section bg-grey">
+          <div class="content-box--one">
+            <div class="columns">
+              <ul class="carousel-withthumbnails">
+                <li>
+                  <img src="http://placehold.it/970x560/200?text=Slider1" alt="Image">
+                </li>
+              </ul>
+              <ul class="carousel-withthumbnails-thumbnails">
+                <li>
+                  <img src="http://placehold.it/320x190/200?text=Slider1" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider1" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/300?text=Slider2" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider2" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/400?text=slider3" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider3" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/500?text=Slider4" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider4" data-type="img">
+                </li>
+                <li>
+                  <img src="http://placehold.it/320x190/600?text=slider5" alt="Image" data-url="http://www.youtube.com/embed/W7qWa52k-nE" data-type="iframe">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    
+        <section class="l-section">
+          <div class="content-box--one">
+            <div class="columns">
+              <div class="event-detail--info">
+                <h3>Weekly Courses</h3>
+                <div class="event-detail--info">
+                  <h5>Lego Weekly Classes</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aperiam possimus velit repudiandae odit quidem, error minus explicabo, nemo magnam eveniet minima doloremque, iusto excepturi dolor ipsum libero autem. Omnis!
+                  </p>
+                </div>
+    
+                <div class="event-detail--info">
+                  <h5>Lego Weekly Classes</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ratione doloribus at, animi ab maiores, voluptatem aliquid laudantium aut! Quisquam qui aliquam expedita, nemo id dolor distinctio laborum quo voluptatibus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    
+      <div class="tabs-panel" id="panel3">
+        <section class="l-section bg-grey">
+          <div class="content-box--one">
+            <div class="columns">
+              <p>
+                We have helped numerous businesses of multiple levels to find the perfect space for their base. Join our growing list of satisfied tenants, and let us help you find the right properties to grow your business.
+              </p>
+              <div class="selectbox--filter">
+                <label>Show Only
+                  <select>
+                    <option value="all">All</option>
+                    <option value=".Community">Creative Multimedia</option>
+                    <option value=".Business">Info Tech</option>
+                    <option value=".Tech">Tech</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+    
+          <div class="l-tiles--plain l-tiles--plain-novariance">
+            <div class="content-box--one">
+                <div class="columns">
+                  <div class="tiles--plain">
+                    <div class="tiles__content">
+                      <span class="label">Info Tech</span>
+                    </div>
+                    <div class="content-box--officespace-list">
+                      <div class="columns _left">
+                        <h5 class="show-for-small-only">CFR Sdn Bhd</h5>
+                        <img src="http://placehold.it/200x130">
+                      </div>
+    
+                      <div class="columns _right">
+                        <h5 class="hide-for-small-only">CFR Sdn Bhd</h5>
+                        <ul class="media--info">
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon2-link"></i>
+                              </div>
+                              <div class="media-object-section">
+                                <a href="#">Visit Website</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-email"></i>
+                              </div>
+                              <div class="media-object-section">
+                                <a href="#">Send Email</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-fax"></i>
+                              </div>
+                              <div class="media-object-section">
+                                +603 8320 3318
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-phone"></i>
+                              </div>
+                              <div class="media-object-section">
+                                +603 8318 3318
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="content-box--description">
+                      <ol>
+                        <li>
+                          Research, development and commercialization of the following Hospital Management solution: a) e-HMS version 2.0 and above
+                        </li>
+                        <li>
+                          Provision of implementation, maintenance and technical services related to the above mentioned solution.
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="tiles--plain">
+                    <div class="tiles__content">
+                      <span class="label">Creative Multimedia</span>
+                    </div>
+                    <div class="content-box--officespace-list">
+                      <div class="columns _left">
+                        <h5 class="show-for-small-only">Accord Infocom Solution</h5>
+                        <img src="http://placehold.it/200x130">
+                      </div>
+    
+                      <div class="columns _right">
+                        <h5 class="hide-for-small-only">Accord Infocom Solution</h5>
+                        <ul class="media--info">
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon2-link"></i>
+                              </div>
+                              <div class="media-object-section">
+                                <a href="#">Visit Website</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-email"></i>
+                              </div>
+                              <div class="media-object-section">
+                                <a href="#">Send Email</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-fax"></i>
+                              </div>
+                              <div class="media-object-section">
+                                +603 8320 3318
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-phone"></i>
+                              </div>
+                              <div class="media-object-section">
+                                +603 8318 3318
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="content-box--description">
+                      <ol>
+                        <li>
+                          Research, development and commercialization of the following Hospital Management solution: a) e-HMS version 2.0 and above
+                        </li>
+                        <li>
+                          Provision of implementation, maintenance and technical services related to the above mentioned solution.
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="tiles--plain">
+                    <div class="tiles__content">
+                      <span class="label">Info Tech</span>
+                    </div>
+                    <div class="content-box--officespace-list">
+                      <div class="columns _left">
+                        <h5 class="show-for-small-only">Aercomsystem Sdn Bhd</h5>
+                        <img src="http://placehold.it/200x130">
+                      </div>
+    
+                      <div class="columns _right">
+                        <h5 class="hide-for-small-only">Aercomsystem Sdn Bhd</h5>
+                        <ul class="media--info">
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon2-link"></i>
+                              </div>
+                              <div class="media-object-section">
+                                <a href="#">Visit Website</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-email"></i>
+                              </div>
+                              <div class="media-object-section">
+                                <a href="#">Send Email</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-fax"></i>
+                              </div>
+                              <div class="media-object-section">
+                                +603 8320 3318
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media-object">
+                              <div class="media-object-section middle">
+                                <i class="icon-phone"></i>
+                              </div>
+                              <div class="media-object-section">
+                                +603 8318 3318
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="content-box--description">
+                      <ol>
+                        <li>
+                          Research, development and commercialization of the following Hospital Management solution: a) e-HMS version 2.0 and above
+                        </li>
+                        <li>
+                          Provision of implementation, maintenance and technical services related to the above mentioned solution.
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="l-section bg-grey">
+          <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+            <li class="pagination-previous disabled">
+              <i class="icon-chevron-thin-left"></i>
+              <span class="show-for-sr">Previous</span>
+            </li>
+            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+            <li><a href="#" aria-label="Page 2">2</a></li>
+            <li><a href="#" aria-label="Page 3">3</a></li>
+            <li><a href="#" aria-label="Page 4">4</a></li>
+            <li class="ellipsis"></li>
+            <li><a href="#" aria-label="Page 12">12</a></li>
+            <li><a href="#" aria-label="Page 13">13</a></li>
+            <li class="pagination-next">
+              <a href="#" aria-label="Next page">
+                <i class="icon-chevron-thin-right"></i>
+                <span class="show-for-sr">Next</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <footer class="l-footer">
+      <div class="row">
+        <div class="l-footer__sitemap small-12 large-6 columns show-for-medium">
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">About Cyberview</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Who is Cyberview</a></li>
+                <li><a class="nav__link" href="#">Our Management</a></li>
+                <li><a class="nav__link" href="#">Apply for jobs</a></li>
+                <li><a class="nav__link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">Our Services</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Investor Services</a></li>
+                <li><a class="nav__link" href="#">Events and Programmes</a></li>
+                <li><a class="nav__link" href="#">Tech Hub Consultancy</a></li>
+                <li><a class="nav__link" href="#">Office Space</a></li>
+                <li><a class="nav__link" href="#">Smart City</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">Our Program</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Pilot Innovations </a></li>
+                <li><a class="nav__link" href="#">Enterprise Developement</a></li>
+                <li><a class="nav__link" href="#">Talent Programmes</a></li>
+                <li><a class="nav__link" href="#">Accelerator</a></li>
+                <li><a class="nav__link" href="#">Women Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="l-footer__contact small-12 medium-6 large-3 columns show-for-medium">
+          <h6 class="txt-green">Cyberview Contact</h6>
+          <ul class="nav--footer">
+            <li>
+              <address>
+                Block 3750 Persiaran APEC,<br>
+                Cyber 8, 63000 Cyberjaya,<br>
+                Selangor, Malaysia.
+              </address>
+            </li>
+            <li>
+              <a class="nav__link" href="tel:+60383156111">+603-8315 6111</a>
+            </li>
+            <li>
+              <a class="nav__link" href="tel:+60383156110">+603-8315 6110</a>
+            </li>
+            <li>
+              <a class="nav__link" href="mailto:ccm@cyberview.com.my"><span class="txt-underline">ccm@cyberview.com.my</span></a>
+            </li>
+          </ul>
+    
+          <h6><a class="txt-green" href="https://goo.gl/maps/moKoN628ZWF2" target="_blank">Get directions<i class="icon-chevron-small-right align-middle"></i></a></h6>
+    
+        </div>
+    
+        <div class="l-footer__social small-12 medium-6 large-3 columns">
+          <h6 class="txt-green">Share the good things</h6>
+          <ul class="nav--social">
+            <li><a class="nav__link" href="#"><i class="icon-twitter"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-facebook"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-youtube"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-instagram"></i></a></li>
+          </ul>
+    
+          <br/>
+    
+          <h6 class="txt-green">Get latest updates from Us</h6>
+          <p class="show-for-medium">Sign up to receive latest updates on programmes, events and more.</p>
+    
+          <form>
+            <div class="input-group">
+              <input class="input-group-field" type="email" placeholder="Your email address">
+              <div class="input-group-button">
+                <button type="submit" class="button"><i class="icon-chevron-thin-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <div class="l-footer__copyright">
+        <div class="row align-justify">
+          <div class="small-12 medium-expand columns">
+            <div class="media-object">
+              <div class="media-object-section middle show-for-medium">
+                <img class="img-logo" src="./assets/img/img-logo.png" />
+              </div>
+              <div class="media-object-section middle">
+                &copy; Copyright 2015 Cyberview Sdn Bhd (405553-T). All Rights Reserved.
+                <br/><small class="show-for-medium">This site is best viewed using Google Chrome 29++, Mozilla Firefox 24++, Safari 5++, Opera 15++ or IE 10++.</small>
+              </div>
+            </div>
+          </div>
+    
+          <div class="columns shrink show-for-medium">
+            <ul class="nav--copyright">
+              <li>
+                <a class="nav__link" href="#">Personal Data Protection</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Legal Policy</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="small-12 columns hide-for-medium text-center">
+            <ul class="nav--copyright--mobile">
+              <li>
+                <a class="nav__link" href="#">Sitemap</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Legal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
