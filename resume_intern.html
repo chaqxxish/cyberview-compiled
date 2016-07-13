@@ -1,0 +1,506 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://url.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Title here" />
+    <meta property="og:description" content="Description here" />
+    <meta property="og:image" content="http://imgurl.com" />
+    <title>Title here</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '993161007428706',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+    
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+    
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+    
+
+    <header>
+      <div class="l-header">
+        <!-- Logo column -->
+        <div class="l-header__logo">
+          <a href="#"><img class="img-logo" src="./assets/img/img-logo-tagline.png"></a>
+        </div>
+    
+        <!-- Menu column -->
+        <div class="l-header__menu">
+          <nav class="nav--main">
+            <!-- First-level nav -->
+            <ul class="nav-first">
+              <!-- About -->
+              <li>
+                <a class="nav__link first-level" href="our_story.html">About</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>About</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="our_story.html">Our Story</a></li>
+                        <li><a class="nav__link second-level" href="management.html">Management</a></li>
+                        <li><a class="nav__link second-level" href="career.html">Career</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Invest -->
+              <li>
+                <a class="nav__link first-level" href="invest_in_cyberjaya.html">Invest</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Invest</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="invest_in_cyberjaya.html">Invest in Cyberjaya</a></li>
+                        <li><a class="nav__link second-level" href="ecosystem.html">Cyberjaya Ecosystem</a></li>
+                        <li><a class="nav__link second-level" href="invest_relation_service.html">Our Investor Relations services</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Industry -->
+              <li>
+                <a class="nav__link first-level" href="programmes.html">Industry</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Industry</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li>
+                          <a class="nav__link second-level" href="livinglab_overview.html">Cyberview Living Lab</a>
+                          <!-- Third-level nav -->
+                          <ul class="nav-third">
+                            <li><a class="nav__link" href="talent.html">Talent</a></li>
+                            <li><a class="nav__link" href="livinglab_accelerator.html">Accelerator</a></li>
+                            <li><a class="nav__link" href="pilot.html">Pilot</a></li>
+                            <li><a class="nav__link" href="enterprise.html">Enterprise</a></li>
+                            <li><a class="nav__link" href="success_stories.html">Success Stories</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="nav__link second-level" href="privatepublic.html">Public - Private Collaboration</a></li>
+                        <li>
+                          <a class="nav__link second-level" href="smartcity.html">Smartcity</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Tech Hub Services -->
+              <li>
+                <a class="nav__link first-level" href="#">Tech Hub Services</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Tech Hub Services</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="#">Overview</a></li>
+                        <li>
+                          <a class="nav__link second-level" href="#">Services</a>
+                          <!-- Third-level nav -->
+                          <ul class="nav-third">
+                            <li><a class="nav__link" href="consultancy_services.html">Consultancy Services</a></li>
+                            <li><a class="nav__link" href="township_service.html">Cyberjaya Township Services</a></li>
+                            <li><a class="nav__link" href="officespace.html">Office Space</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="nav__link second-level" href="projects.html">Projects</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Events & Media -->
+              <li>
+                <a class="nav__link first-level" href="#">Events &amp; Media</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Events &amp; Media</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="events.html">Events</a></li>
+                        <li><a class="nav__link second-level" href="media.html">Media</a></li>
+                        <li><a class="nav__link second-level" href="resources.html">Resources</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Contact Us -->
+              <li><a class="nav__link first-level" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+    
+          <!-- Mobile navi will go here -->
+          <nav class="nav--mobile">
+            <ul class="vertical menu" data-accordion-menu data-multi-open="false">
+              <li>
+                <a class="nav__link" href="#">About</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Our Story</a></li>
+                  <li><a class="nav__link" href="#">Management</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Invest</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Invest in Cyberjaya</a></li>
+                  <li><a class="nav__link" href="#">Cyberjaya Ecosystem</a></li>
+                  <li><a class="nav__link" href="#">Our Investor Relations Services</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Industry</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Overview</a></li>
+                  <li>
+                    <a class="nav__link" href="#">Living Lab</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="nav__link" href="#">Living Lab Accelerator</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Enterprise</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Pilot</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Talent</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="nav__link" href="#">Public - Private Collaboration</a></li>
+                  <li>
+                    <a class="nav__link" href="#">Smartcity</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="nav__link" href="#">Link</a></li>
+                      <li><a class="nav__link" href="#">Projects</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="nav__link" href="#">Tech Hub Services</a></li>
+              <li><a class="nav__link" href="#">Events &amp; Media</a></li>
+              <li><a class="nav__link" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <!-- Hamburger buttton -->
+        <div class="l-header__hamburger">
+          <button class="button-menu" type="button"><i class="icon-menu"></i></button>
+        </div>
+    
+        <!-- Search column -->
+        <div class="l-header__search">
+          <button class="button-search"><i class="icon-search"></i></button>
+        </div>
+      </div>
+    </header>
+    
+
+    <section class="l-section">
+      <div class="content-box--one">
+        <div class="columns">
+          <p>Internship</p>
+          <h2>Resume Deposit</h2>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section">
+      <div class="l-contact l-form">
+        <form action="">
+          <div class="content-box--two">
+            <div class="columns _left">
+              <label>
+                Full Name*
+                <input type="text">
+              </label>
+              <label>
+                Email Address*
+                <input type="text">
+              </label>
+              <label>
+                Department Applied
+                <div class="selectbox-custom">
+                  <select>
+                    <option value="husker">Husker</option>
+                    <option value="starbuck">Starbuck</option>
+                    <option value="hotdog">Hot Dog</option>
+                    <option value="apollo">Apollo</option>
+                  </select>
+                </div>
+              </label>
+              <label>
+                Upload Your CV*
+                <p class="label--description">Kindly include your current and expected salary in your CV. MS Word/PDF format only (Size limit 10MB)</p>
+                <div class="file-custom">
+                  <input type="file" class="input-file">
+                  <div class="content-box align-middle"> 
+                    <div class="button">Choose File</div>
+                    <span class="input-filename"></span>
+                  </div>
+                </div>
+              </label>
+              <label>
+                Internship Duration
+                <div class="content-box--three">
+                  <div class="columns">
+                    <div class="radio-custom">
+                      <input id="radio-1" value="" name="radio-duration" type="radio">
+                      <span class="input"></span>
+                      <label for="radio-1">3 months</label>
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="radio-custom">
+                      <input id="radio-2" value="" name="radio-duration" type="radio">
+                      <span class="input"></span>
+                      <label for="radio-2">6 months</label>
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="radio-custom">
+                      <!-- 
+                        Values for data-target and data-target-radio can be changed, but they should be the same value    . 
+                      -->
+                      <input id="radio-3" value="" name="radio-duration" type="radio" class="input-others" data-target="input-others-target">
+                      <span class="input"></span>
+                      <label for="radio-3">Others</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-box--one">
+                  <div class="columns">
+                    <input type="text" class="input-others" data-target-radio="input-others-target" placeholder="Please specify" disabled="disabled">
+                  </div>
+                </div>                  
+              </label>
+            </div>
+            <div class="columns _right">
+              <label>
+                Contact Number* 
+                <span class="help-text" id="contactNumHelpText">Please enter with country code</span>
+                <input type="text">
+              </label>
+              <label>
+                Field of Study*
+                <input type="text">
+              </label>
+              <label>
+                University
+                <input type="text">
+              </label>
+              <label>
+                Upload a Recent Photo*
+                <p class="label--description">Preferably image format in JPEG or PNG<br class="hide-for-small-only">(Size limit 2MB)</p>
+                <div class="file-custom">
+                  <input type="file" class="input-file">
+                  <div class="content-box align-middle">  
+                      <div class="button">Choose File</div>
+                      <span class="input-filename"></span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="content-box--one">
+            <div class="columns">
+              <label>
+                Please describe yourself and your suitability to the position in 200 words or less.*
+                <br>
+                <span class="help-text" id="contactNumHelpText">This is a compulsory section. Your answer will be used to evaluate your application.</span> 
+                <textarea name="" id="" cols="30" rows="10" maxlength="200"></textarea>
+              </label>
+              <div class="text-center">
+                <button class="button" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="l-footer">
+      <div class="row">
+        <div class="l-footer__sitemap small-12 large-6 columns show-for-medium">
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">About Cyberview</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Who is Cyberview</a></li>
+                <li><a class="nav__link" href="#">Our Management</a></li>
+                <li><a class="nav__link" href="#">Apply for jobs</a></li>
+                <li><a class="nav__link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">Our Services</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Investor Services</a></li>
+                <li><a class="nav__link" href="#">Events and Programmes</a></li>
+                <li><a class="nav__link" href="#">Tech Hub Consultancy</a></li>
+                <li><a class="nav__link" href="#">Office Space</a></li>
+                <li><a class="nav__link" href="#">Smart City</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">Our Program</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Pilot Innovations </a></li>
+                <li><a class="nav__link" href="#">Enterprise Developement</a></li>
+                <li><a class="nav__link" href="#">Talent Programmes</a></li>
+                <li><a class="nav__link" href="#">Accelerator</a></li>
+                <li><a class="nav__link" href="#">Women Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="l-footer__contact small-12 medium-6 large-3 columns show-for-medium">
+          <h6 class="txt-green">Cyberview Contact</h6>
+          <ul class="nav--footer">
+            <li>
+              <address>
+                Block 3750 Persiaran APEC,<br>
+                Cyber 8, 63000 Cyberjaya,<br>
+                Selangor, Malaysia.
+              </address>
+            </li>
+            <li>
+              <a class="nav__link" href="tel:+60383156111">+603-8315 6111</a>
+            </li>
+            <li>
+              <a class="nav__link" href="tel:+60383156110">+603-8315 6110</a>
+            </li>
+            <li>
+              <a class="nav__link" href="mailto:ccm@cyberview.com.my"><span class="txt-underline">ccm@cyberview.com.my</span></a>
+            </li>
+          </ul>
+    
+          <h6><a class="txt-green" href="https://goo.gl/maps/moKoN628ZWF2" target="_blank">Get directions<i class="icon-chevron-small-right align-middle"></i></a></h6>
+    
+        </div>
+    
+        <div class="l-footer__social small-12 medium-6 large-3 columns">
+          <h6 class="txt-green">Share the good things</h6>
+          <ul class="nav--social">
+            <li><a class="nav__link" href="#"><i class="icon-twitter"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-facebook"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-youtube"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-instagram"></i></a></li>
+          </ul>
+    
+          <br/>
+    
+          <h6 class="txt-green">Get latest updates from Us</h6>
+          <p class="show-for-medium">Sign up to receive latest updates on programmes, events and more.</p>
+    
+          <form>
+            <div class="input-group">
+              <input class="input-group-field" type="email" placeholder="Your email address">
+              <div class="input-group-button">
+                <button type="submit" class="button"><i class="icon-chevron-thin-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <div class="l-footer__copyright">
+        <div class="row align-justify">
+          <div class="small-12 medium-expand columns">
+            <div class="media-object">
+              <div class="media-object-section middle show-for-medium">
+                <img class="img-logo" src="./assets/img/img-logo.png" />
+              </div>
+              <div class="media-object-section middle">
+                &copy; Copyright 2015 Cyberview Sdn Bhd (405553-T). All Rights Reserved.
+                <br/><small class="show-for-medium">This site is best viewed using Google Chrome 29++, Mozilla Firefox 24++, Safari 5++, Opera 15++ or IE 10++.</small>
+              </div>
+            </div>
+          </div>
+    
+          <div class="columns shrink show-for-medium">
+            <ul class="nav--copyright">
+              <li>
+                <a class="nav__link" href="#">Personal Data Protection</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Legal Policy</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="small-12 columns hide-for-medium text-center">
+            <ul class="nav--copyright--mobile">
+              <li>
+                <a class="nav__link" href="#">Sitemap</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Legal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
