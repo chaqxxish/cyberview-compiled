@@ -413,8 +413,8 @@
               </p>
               <div class="l-tabs">
                 <ul class="tabs tabs-floorplan" data-tabs id="tabs-floorplan">
-                  <li class="tabs-title is-active"><a href="#floorG" aria-selected="true">G</a></li>
-                  <li class="tabs-title"><a href="#floor1">1</a></li>
+                  <li class="tabs-title"><a href="#floorG" aria-selected="true">G</a></li>
+                  <li class="tabs-title is-active"><a href="#floor1">1</a></li>
                   <li class="tabs-title"><a href="#floor2">2</a></li>
                   <li class="tabs-title"><a href="#floor3">3</a></li>
                 </ul>
@@ -426,20 +426,29 @@
               <div class="l-floorplan">
                 <div class="tabs-content" data-tabs-content="tabs-floorplan">
                   <div class="floorplan-wrap">
-                    <div id="floorG" class="tabs-panel is-active">
-                      <img>
-                      
-                      <div class="floorplan-units-wrap"></div>
+                    <div id="floorG" class="tabs-panel">
+                      <div class="floorplan-img-wrap">
+                        <img>
+                        <div class="floorplan-units-wrap"></div>
+                      </div>
                     </div>
-                    <div id="floor1" class="tabs-panel">
-                      <img src="/assets/img/floorplan/sme1-1.jpg" alt="SME">
-                      <div class="floorplan-units-wrap"></div>
+                    <div id="floor1" class="tabs-panel is-active">
+                      <div class="floorplan-img-wrap">
+                        <img src="/assets/img/floorplan/sme1-1.jpg" alt="SME">
+                        <div class="floorplan-units-wrap"></div>
+                      </div>
                     </div>
                     <div id="floor2" class="tabs-panel">
-                      <img src="/assets/img/floorplan/sme1-2.jpg" alt="SME">
+                      <div class="floorplan-img-wrap">
+                        <img src="/assets/img/floorplan/sme1-2.jpg" alt="SME">
+                        <div class="floorplan-units-wrap"></div>
+                      </div>
                     </div>
                     <div id="floor3" class="tabs-panel">
-                      <img src="/assets/img/floorplan/sme1-3.jpg" alt="SME">
+                      <div class="floorplan-img-wrap">
+                        <img src="/assets/img/floorplan/sme1-3.jpg" alt="SME">
+                        <div class="floorplan-units-wrap"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -726,5 +735,58 @@
     </footer>
     
     <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Load floor plan units
+        function displayFloorplanUnits(json, ele) {
+          $.getJSON(json, function (data) {
+            $img = $(ele).find('img');
+            $units = $(ele).find('.floorplan-units-wrap');
+    
+            for (var key in data) {
+              var val = data[key];
+              $img.attr({
+                src: '/assets/img/floorplan/' + val[0]['img'],
+                alt: val[0]['img']
+              });
+    
+              for (var i = 0; i < val[0]['units'].length; i++) {
+                $unit = val[0]['units'][i];
+                $unitSize = '';
+    
+                if ($unit['sizeInner']) {
+                  for (var j = 0; j < $unit['sizeInner'].length; j++) {
+                    $size = $unit['sizeInner'][j];
+                    $topInner = ($size['top']) ? 'top: ' + $size['top'] + ';' : '';
+                    $bottomInner = ($size['bottom']) ? 'bottom: ' + $size['bottom'] + ';' : '';
+                    $leftInner = ($size['left']) ? 'left: ' + $size['left'] + ';' : '';
+                    $rightInner = ($size['right']) ? 'right: ' + $size['right'] + ';' : '';
+                    $widthInner = ($size['width']) ? 'width: ' + $size['width'] + ';' : '';
+                    $heightInner = ($size['height']) ? 'height: ' + $size['height'] + ';' : '';
+    
+    
+                    $unitSize += '<span style="'+ $widthInner + $heightInner + $topInner + $bottomInner + $leftInner + $rightInner +'"></span>';
+                  }
+                } else {
+                  $unitSize += '<span></span>';
+                }
+    
+                $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+    
+                $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
+    
+                $unitAppend = '<div class="unit" style="width:'+ $unit['width'] +'; height: '+ $unit['height'] +'; top: '+ $unit['top'] +'; left: '+ $unit['left'] +'" data-vacant="'+ $unit['vacant'] +'">'+ $unitSize + $unitTooltip + '</div>';
+    
+                
+                $units.append($unitAppend);
+              }
+            }
+          });
+        }
+    
+        displayFloorplanUnits('./assets/floorplan/sme1.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/sme1-1.json', '#floor1');
+      })
+    </script>
   </body>
 </html>
