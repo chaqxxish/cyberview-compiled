@@ -295,56 +295,66 @@
                 <div class="content-box--three">
                   <div class="columns">
                     <div class="radio-custom">
-                      <input id="radio-1" value="" name="radio-duration" type="radio">
+                      <input id="radio-1" value="" name="radio-type" type="radio" class="radio-options-tab">
                       <span class="input"></span>
                       <label for="radio-1">School</label>
                     </div>
                   </div>
                   <div class="columns">
                     <div class="radio-custom">
-                      <input id="radio-2" value="" name="radio-duration" type="radio">
+                      <input id="radio-2" value="" name="radio-type" type="radio" class="radio-options-tab">
                       <span class="input"></span>
                       <label for="radio-2">University</label>
                     </div>
                   </div>
                   <div class="columns">
                     <div class="radio-custom">
-                      <input id="radio-3" value="" name="radio-duration" type="radio">
+                      <input id="radio-3" value="" name="radio-type" type="radio" class="radio-options-tab">
                       <span class="input"></span>
                       <label for="radio-3">Working/Business</label>
                     </div>
                   </div>
-                </div>
-                <div class="content-box--one">
-                  <div class="columns">
-                    <input type="text" class="input-others" data-target-radio="input-others-target" placeholder="Please specify" disabled="disabled">
+                </div>              
+              </label>
+    
+              <div class="radio-type-selections">
+                <label>
+                  Your Age
+                  <div class="selectbox-custom">
+                    <select>
+                      <option value="">Select your age</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
                   </div>
-                </div>                  
-              </label>
+                </label>
     
-              <label>
-                Your Age
-                <div class="selectbox-custom">
-                  <select>
-                    <option value="">Select your age</option>
-                    <option value="starbuck">Starbuck</option>
-                    <option value="hotdog">Hot Dog</option>
-                    <option value="apollo">Apollo</option>
-                  </select>
-                </div>
-              </label>
+                <label>School Name
+                  <input type="text">
+                </label>
     
-              <label>School Name
-                <input type="text">
-              </label>
+                <label>Where are you from (Location)?
+                  <input type="text">
+                </label>
     
-              <label>Where are you from (Location)?
-                <input type="text">
-              </label>
+                <label>Parent / Guardian Email
+                  <input type="text">
+                </label>
+              </div>
     
-              <label>Parent / Guardian Email
-                <input type="text">
-              </label>
+              <div class="radio-type-selections">
+                <label>University
+                  <input type="text">
+                </label>
+              </div>
+    
+              <div class="radio-type-selections">
+                <label>Enter Your Full Company Name
+                  <span class="help-text">(No acronyms)</span>
+                  <input type="text">
+                </label>
+              </div>
     
               <div class="text-center">
                 <button class="button" type="submit">Register</button>
@@ -481,5 +491,58 @@
     </footer>
     
     <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Load floor plan units
+        function displayFloorplanUnits(json, ele) {
+          $.getJSON(json, function (data) {
+            $img = $(ele).find('img');
+            $units = $(ele).find('.floorplan-units-wrap');
+    
+            for (var key in data) {
+              var val = data[key];
+              $img.attr({
+                src: '/assets/img/floorplan/' + val[0]['img'],
+                alt: val[0]['img']
+              });
+    
+              for (var i = 0; i < val[0]['units'].length; i++) {
+                $unit = val[0]['units'][i];
+                $unitSize = '';
+    
+                if ($unit['sizeInner']) {
+                  for (var j = 0; j < $unit['sizeInner'].length; j++) {
+                    $size = $unit['sizeInner'][j];
+                    $topInner = ($size['top']) ? 'top: ' + $size['top'] + ';' : '';
+                    $bottomInner = ($size['bottom']) ? 'bottom: ' + $size['bottom'] + ';' : '';
+                    $leftInner = ($size['left']) ? 'left: ' + $size['left'] + ';' : '';
+                    $rightInner = ($size['right']) ? 'right: ' + $size['right'] + ';' : '';
+                    $widthInner = ($size['width']) ? 'width: ' + $size['width'] + ';' : '';
+                    $heightInner = ($size['height']) ? 'height: ' + $size['height'] + ';' : '';
+    
+    
+                    $unitSize += '<span style="'+ $widthInner + $heightInner + $topInner + $bottomInner + $leftInner + $rightInner +'"></span>';
+                  }
+                } else {
+                  $unitSize += '<span></span>';
+                }
+    
+                $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+    
+                $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
+    
+                $unitAppend = '<div class="unit" style="width:'+ $unit['width'] +'; height: '+ $unit['height'] +'; top: '+ $unit['top'] +'; left: '+ $unit['left'] +'" data-vacant="'+ $unit['vacant'] +'">'+ $unitSize + $unitTooltip + '</div>';
+    
+                
+                $units.append($unitAppend);
+              }
+            }
+          });
+        }
+    
+        displayFloorplanUnits('./assets/floorplan/sme1.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/sme1-1.json', '#floor1');
+      })
+    </script>
   </body>
 </html>
