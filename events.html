@@ -76,6 +76,7 @@
                       <ul class="nav-second">
                         <li><a class="nav__link second-level" href="our_story.html">Our Story</a></li>
                         <li><a class="nav__link second-level" href="management.html">Management</a></li>
+                        <li><a class="nav__link second-level" href="career.html">Career</a></li>
                       </ul>
                     </div>
                   </div>
@@ -155,6 +156,7 @@
                           <ul class="nav-third">
                             <li><a class="nav__link" href="consultancy_services.html">Consultancy Services</a></li>
                             <li><a class="nav__link" href="township_service.html">Cyberjaya Township Services</a></li>
+                            <li><a class="nav__link" href="officespace.html">Office Space</a></li>
                           </ul>
                         </li>
                         <li><a class="nav__link second-level" href="projects.html">Projects</a></li>
@@ -312,16 +314,16 @@
       </div>
     </section>
     
-    <div class="l-tiles--plain l-tiles--plain-novariance">
+    <div class="l-tiles--plain l-tiles--plain-novariance" data-equalizer>
       <div class="content-box--two">
         <div class="columns Business">
           <a href="event_details.html">
-            <div class="tiles--plain tiles--events">
+            <div class="tiles--plain tiles--events" data-equalizer-watch>
               <div class="tiles__content">
                 <span class="label">Business</span>
                 <span class="tiles__headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem repellendus temporibus quis unde labore expedita aliquid, quo reiciendis reprehenderit!</p>
-  
+    
                 <div class="tiles__metadata">
                   <div class="content-box--two">
                     <div class="columns">
@@ -369,12 +371,12 @@
         </div>
         <div class="columns Tech">
           <a href="event_details.html">
-            <div class="tiles--plain tiles--events">
+            <div class="tiles--plain tiles--events" data-equalizer-watch>
               <div class="tiles__content">
                 <span class="label">Tech</span>
                 <span class="tiles__headline">Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.</p>
-  
+    
                 <div class="tiles__metadata">
                   <div class="content-box--two">
                     <div class="columns">
@@ -422,12 +424,12 @@
         </div>
         <div class="columns Community">
           <a href="event_details.html">
-            <div class="tiles--plain tiles--events">
+            <div class="tiles--plain tiles--events" data-equalizer-watch>
               <div class="tiles__content">
                 <span class="label">Community</span>
                 <span class="tiles__headline">Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.</p>
-  
+    
                 <div class="tiles__metadata">
                   <div class="content-box--two">
                     <div class="columns">
@@ -625,5 +627,58 @@
     </footer>
     
     <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Load floor plan units
+        function displayFloorplanUnits(json, ele) {
+          $.getJSON(json, function (data) {
+            $img = $(ele).find('img');
+            $units = $(ele).find('.floorplan-units-wrap');
+    
+            for (var key in data) {
+              var val = data[key];
+              $img.attr({
+                src: '/assets/img/floorplan/' + val[0]['img'],
+                alt: val[0]['img']
+              });
+    
+              for (var i = 0; i < val[0]['units'].length; i++) {
+                $unit = val[0]['units'][i];
+                $unitSize = '';
+    
+                if ($unit['sizeInner']) {
+                  for (var j = 0; j < $unit['sizeInner'].length; j++) {
+                    $size = $unit['sizeInner'][j];
+                    $topInner = ($size['top']) ? 'top: ' + $size['top'] + ';' : '';
+                    $bottomInner = ($size['bottom']) ? 'bottom: ' + $size['bottom'] + ';' : '';
+                    $leftInner = ($size['left']) ? 'left: ' + $size['left'] + ';' : '';
+                    $rightInner = ($size['right']) ? 'right: ' + $size['right'] + ';' : '';
+                    $widthInner = ($size['width']) ? 'width: ' + $size['width'] + ';' : '';
+                    $heightInner = ($size['height']) ? 'height: ' + $size['height'] + ';' : '';
+    
+    
+                    $unitSize += '<span style="'+ $widthInner + $heightInner + $topInner + $bottomInner + $leftInner + $rightInner +'"></span>';
+                  }
+                } else {
+                  $unitSize += '<span></span>';
+                }
+    
+                $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+    
+                $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
+    
+                $unitAppend = '<div class="unit" style="width:'+ $unit['width'] +'; height: '+ $unit['height'] +'; top: '+ $unit['top'] +'; left: '+ $unit['left'] +'" data-vacant="'+ $unit['vacant'] +'">'+ $unitSize + $unitTooltip + '</div>';
+    
+                
+                $units.append($unitAppend);
+              }
+            }
+          });
+        }
+    
+        displayFloorplanUnits('./assets/floorplan/sme1.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/sme1-1.json', '#floor1');
+      })
+    </script>
   </body>
 </html>
