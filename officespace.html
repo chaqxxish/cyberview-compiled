@@ -76,6 +76,7 @@
                       <ul class="nav-second">
                         <li><a class="nav__link second-level" href="our_story.html">Our Story</a></li>
                         <li><a class="nav__link second-level" href="management.html">Management</a></li>
+                        <li><a class="nav__link second-level" href="career.html">Career</a></li>
                       </ul>
                     </div>
                   </div>
@@ -155,6 +156,7 @@
                           <ul class="nav-third">
                             <li><a class="nav__link" href="consultancy_services.html">Consultancy Services</a></li>
                             <li><a class="nav__link" href="township_service.html">Cyberjaya Township Services</a></li>
+                            <li><a class="nav__link" href="officespace.html">Office Space</a></li>
                           </ul>
                         </li>
                         <li><a class="nav__link second-level" href="projects.html">Projects</a></li>
@@ -449,7 +451,7 @@
             </div>
             fb3500
           </div>
-          <a href="#" class="button">View Details</a>
+          <a href="officespace_listing.html" class="button">View Details</a>
         </div>
       </div>
     
@@ -602,5 +604,60 @@
     </footer>
     
     <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Load floor plan units
+        function displayFloorplanUnits2(json, ele) {
+          $.getJSON(json, function (data) {
+            $units = $(ele).find('.floorplan-units-wrap');
+    
+            for (var key in data) {
+              var val = data[key];
+    
+              for (var i = 0; i < val['units'].length; i++) {
+                $unit = val['units'][i];
+                $unitSize = '';
+    
+                if ($unit['unit']) {
+                  $('#unit-' + $unit['unit']).attr('data-vacant', $unit['vacant']);
+                  
+                  $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+                  $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
+    
+                  $('#unit-' + $unit['unit']).append($unitTooltip);
+                }
+              }
+            }
+          });
+        }
+    
+        displayFloorplanUnits2('./assets/floorplan/sme1.json', '#floorG');
+        displayFloorplanUnits2('./assets/floorplan/sme1-1.json', '#floor1');
+        displayFloorplanUnits2('./assets/floorplan/sme1-2.json', '#floor2');
+        displayFloorplanUnits2('./assets/floorplan/sme1-3.json', '#floor3');
+    
+        displayFloorplanUnits2('./assets/floorplan/sme2.json', '#floorG');
+        displayFloorplanUnits2('./assets/floorplan/sme2-1.json', '#floor1');
+        displayFloorplanUnits2('./assets/floorplan/sme2-2.json', '#floor2');
+        displayFloorplanUnits2('./assets/floorplan/sme2-3.json', '#floor3');
+    
+        displayFloorplanUnits2('./assets/floorplan/sme3-g.json', '#floorG');
+        displayFloorplanUnits2('./assets/floorplan/sme3-1.json', '#floor1');
+    
+        displayFloorplanUnits2('./assets/floorplan/12-g.json', '#floorG');
+        displayFloorplanUnits2('./assets/floorplan/12-1.json', '#floor1');
+        displayFloorplanUnits2('./assets/floorplan/12-2.json', '#floor2');
+        displayFloorplanUnits2('./assets/floorplan/12-3.json', '#floor3');
+        displayFloorplanUnits2('./assets/floorplan/12-4-5.json', '#floor4');
+        displayFloorplanUnits2('./assets/floorplan/12-6.json', '#floor6');
+    
+        displayFloorplanUnits2('./assets/floorplan/12a-g.json', '#floorG');
+        displayFloorplanUnits2('./assets/floorplan/12a-1.json', '#floor1');
+        displayFloorplanUnits2('./assets/floorplan/12a-2.json', '#floor2');
+        displayFloorplanUnits2('./assets/floorplan/12a-3-9.json', '#floor3');
+        displayFloorplanUnits2('./assets/floorplan/12a-10.json', '#floor10');
+        displayFloorplanUnits2('./assets/floorplan/12a-11.json', '#floor11');
+      })
+    </script>
   </body>
 </html>
