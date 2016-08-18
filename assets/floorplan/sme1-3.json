@@ -1,0 +1,101 @@
+{"SME1": {
+    "units": [
+      {
+        "unit": "C-03-01",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "C-03-02",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-03",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-04",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-05",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-06",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-07",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-08",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-09",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-10",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-11",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-03-12",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      }
+    ]
+  }
+}

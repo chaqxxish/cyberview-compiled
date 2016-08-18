@@ -1,8 +1,7 @@
-{"SME1": 
-  {
+{"SME1": {
     "units": [
       {
-        "unit": "C-G-01",
+        "unit": "C-01-02",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -10,7 +9,7 @@
         "vacant": true
       },
       {
-        "unit": "C-G-02",
+        "unit": "C-01-03",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -18,7 +17,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-03",
+        "unit": "C-01-04",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -26,7 +25,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-04",
+        "unit": "C-01-05",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -34,7 +33,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-05",
+        "unit": "C-01-06",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -42,7 +41,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-06",
+        "unit": "C-01-07",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -50,7 +49,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-07",
+        "unit": "C-01-08",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -58,7 +57,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-08",
+        "unit": "C-01-09",
         "type": "A1",
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -66,7 +65,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-04",
+        "unit": "C-01-10",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -74,7 +73,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-09",
+        "unit": "C-01-11",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -82,7 +81,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-10",
+        "unit": "C-01-12",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -90,7 +89,7 @@
         "vacant": true
       },
       {
-        "unit": "C-G-11",
+        "unit": "C-01-13",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -98,7 +97,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-12",
+        "unit": "C-01-14",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -106,7 +105,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-13",
+        "unit": "C-01-15",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -114,7 +113,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-14",
+        "unit": "C-01-16",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -122,7 +121,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-15",
+        "unit": "C-01-17",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -130,7 +129,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-16",
+        "unit": "C-01-18",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -138,7 +137,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-17",
+        "unit": "C-01-19",
         "type": "A1",
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -146,7 +145,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-18",
+        "unit": "C-01-20",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -154,7 +153,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-19",
+        "unit": "C-01-21",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -162,7 +161,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-20",
+        "unit": "C-01-22",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -170,7 +169,7 @@
         "vacant": true
       },
       {
-        "unit": "C-G-21",
+        "unit": "C-01-23",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -178,7 +177,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-22",
+        "unit": "C-01-24",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -186,7 +185,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-23",
+        "unit": "C-01-25",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -194,7 +193,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-24",
+        "unit": "C-01-26",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -202,7 +201,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-25",
+        "unit": "C-01-27",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -210,7 +209,15 @@
         "vacant": false
       },
       {
-        "unit": "C-G-26",
+        "unit": "C-01-28",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-29",
         "type": "A1",
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -218,7 +225,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-27",
+        "unit": "C-01-30",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -226,7 +233,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-28",
+        "unit": "C-01-31",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -234,7 +241,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-29",
+        "unit": "C-01-32",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -242,7 +249,7 @@
         "vacant": true
       },
       {
-        "unit": "C-G-30",
+        "unit": "C-01-33",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -250,7 +257,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-31",
+        "unit": "C-01-34",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -258,7 +265,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-32",
+        "unit": "C-01-35",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -266,7 +273,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-33",
+        "unit": "C-01-36",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -274,7 +281,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-34",
+        "unit": "C-01-37",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -282,7 +289,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-35",
+        "unit": "C-01-38",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -290,7 +297,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-36",
+        "unit": "C-01-39",
         "type": "A1",
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -298,7 +305,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-37",
+        "unit": "C-01-40",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -306,7 +313,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-38",
+        "unit": "C-01-41",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -314,7 +321,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-39",
+        "unit": "C-01-42",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -322,7 +329,7 @@
         "vacant": false
       },
       {
-        "unit": "C-G-40",
+        "unit": "C-01-43",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
@@ -330,7 +337,47 @@
         "vacant": false
       },
       {
-        "unit": "C-G-41",
+        "unit": "C-01-44",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-45",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-46",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-47",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-48",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-49",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
