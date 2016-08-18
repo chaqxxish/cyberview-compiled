@@ -1,0 +1,366 @@
+{"SME2": 
+  {
+    "units": [
+      {
+        "unit": "SME2-3-01",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "SME2-3-02",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-03",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-04",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-05",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-06",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-07",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-08",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-04",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-09",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-10",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "SME2-3-11",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-12",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-13",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-14",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-15",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-16",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-17",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-18",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-19",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-20",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "SME2-3-21",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-22",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-23",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-24",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-25",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-26",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-27",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-28",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-29",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "SME2-3-30",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-31",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-32",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-33",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-34",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-35",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-36",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-37",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-38",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-39",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-40",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-41",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-42",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "SME2-3-43",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": true
+      },
+      {
+        "unit": "SME2-3-44",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      }
+    ]
+  }
+}

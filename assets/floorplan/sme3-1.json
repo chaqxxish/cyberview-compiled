@@ -1,0 +1,37 @@
+{"SME3": {
+    "units": [
+      {
+        "unit": "SME3-1-01",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "SME3-1-02",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "SME3-1-03",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "SME3-1-04",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      }
+    ]
+  }
+}
