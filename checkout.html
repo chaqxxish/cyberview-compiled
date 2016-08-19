@@ -253,39 +253,94 @@
     </header>
     
 
-    <section class="l-section">
-      <div class="content-box--one">
-        <div class="columns">
-          <p>Events & Media</p>
+    <div class="l-banner--page no-image">
+      <div class="banner--page">
+        <div class="banner__content">
+          <div class="banner__content__header">
+            <div class="header-box--social">
+              <p class="header-box__prehead">Events & Media</p>
+              <h2 class="txt-green">Checkout</h2>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="content-box--two">
+    </div>
+    
+    <section class="l-section l-checkout">
+      <div class="content-box--one">
         <div class="columns">
-          <div class="l-contact l-form content-form">
-            <h2>Checkout</h2>
+          <div class="l-contact content-form">
             <label>
-              Event
-              <input type="text" disabled="disabled" value="Twincity Marathon">
+              Event Details
+              <textarea disabled="disabled">
+    Developing New Business Idea
+    Oct 26, 2016 - Oct 27, 2016</textarea>
             </label>
+    
             <label>
-              Date
-              <input type="text" disabled="disabled" value="19-12-2016">
+              Full Name*
+              <input type="text">
+            </label>
+    
+            <label>
+              Email Address*
+              <input type="text">
+            </label>
+    
+            <label>
+              Mobile Number*
+              <input type="text">
             </label>
           </div>
         </div>
-    
         <div class="columns">
-          <div class="l-contact l-form content-form">
-            <h2>Payment Details</h2>
-            <label>
-              Total Amount
-              <input type="text" disabled="disabled" value="19-12-2016">
-            </label>
+          <h2>Payment Detail</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Event Cost</td>
+                <td>RM 360.00</td>
+              </tr>
+              <tr>
+                <td>Early Bird Discount</td>
+                <td>- RM 72.00</td>
+              </tr>
+              <tr>
+                <td>Coupon Code Discount</td>
+                <td>- RM 36.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <table>
+            <tbody>
+              <tr>
+                <td>Sub Amount</td>
+                <td>RM 252.00</td>
+              </tr>
+              <tr>
+                <td>GST 6%</td>
+                <td>RM 15.12</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <table>
+            <tbody>
+              <tr>
+                <td>Total Amount</td>
+                <td>RM 267.12</td>
+              </tr>
+            </tbody>
+          </table>
     
-            <label>
-              Voucher / Coupon Code
+          <div class="checkout--coupon">
+            <p>Have a coupon code?</p>
+            <div class="row">
               <input type="text">
-            </label>
+              <button class="button">Apply</button>
+            </div>
+            <p class="error">*Enter valid coupon code</p>
           </div>
         </div>
       </div>
@@ -293,8 +348,7 @@
       <div class="content-box--one">
         <div class="columns">
           <div class="text-center">
-            <a href="#" class="button">Back to Previous Page</a>
-            <button class="button" type="submit">Submit</button>
+            <button class="button" type="submit">Proceed to Pay</button>
           </div>
         </div>
       </div>
@@ -431,45 +485,23 @@
         // Load floor plan units
         function displayFloorplanUnits(json, ele) {
           $.getJSON(json, function (data) {
-            $img = $(ele).find('img');
             $units = $(ele).find('.floorplan-units-wrap');
     
             for (var key in data) {
               var val = data[key];
-              $img.attr({
-                src: '/assets/img/floorplan/' + val[0]['img'],
-                alt: val[0]['img']
-              });
     
-              for (var i = 0; i < val[0]['units'].length; i++) {
-                $unit = val[0]['units'][i];
+              for (var i = 0; i < val['units'].length; i++) {
+                $unit = val['units'][i];
                 $unitSize = '';
     
-                if ($unit['sizeInner']) {
-                  for (var j = 0; j < $unit['sizeInner'].length; j++) {
-                    $size = $unit['sizeInner'][j];
-                    $topInner = ($size['top']) ? 'top: ' + $size['top'] + ';' : '';
-                    $bottomInner = ($size['bottom']) ? 'bottom: ' + $size['bottom'] + ';' : '';
-                    $leftInner = ($size['left']) ? 'left: ' + $size['left'] + ';' : '';
-                    $rightInner = ($size['right']) ? 'right: ' + $size['right'] + ';' : '';
-                    $widthInner = ($size['width']) ? 'width: ' + $size['width'] + ';' : '';
-                    $heightInner = ($size['height']) ? 'height: ' + $size['height'] + ';' : '';
+                if ($unit['unit']) {
+                  $('#unit-' + $unit['unit']).attr('data-vacant', $unit['vacant']);
+                  
+                  $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+                  $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
     
-    
-                    $unitSize += '<span style="'+ $widthInner + $heightInner + $topInner + $bottomInner + $leftInner + $rightInner +'"></span>';
-                  }
-                } else {
-                  $unitSize += '<span></span>';
+                  $('#unit-' + $unit['unit']).append($unitTooltip);
                 }
-    
-                $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
-    
-                $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
-    
-                $unitAppend = '<div class="unit" style="width:'+ $unit['width'] +'; height: '+ $unit['height'] +'; top: '+ $unit['top'] +'; left: '+ $unit['left'] +'" data-vacant="'+ $unit['vacant'] +'">'+ $unitSize + $unitTooltip + '</div>';
-    
-                
-                $units.append($unitAppend);
               }
             }
           });
@@ -477,6 +509,30 @@
     
         displayFloorplanUnits('./assets/floorplan/sme1.json', '#floorG');
         displayFloorplanUnits('./assets/floorplan/sme1-1.json', '#floor1');
+        displayFloorplanUnits('./assets/floorplan/sme1-2.json', '#floor2');
+        displayFloorplanUnits('./assets/floorplan/sme1-3.json', '#floor3');
+    
+        displayFloorplanUnits('./assets/floorplan/sme2.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/sme2-1.json', '#floor1');
+        displayFloorplanUnits('./assets/floorplan/sme2-2.json', '#floor2');
+        displayFloorplanUnits('./assets/floorplan/sme2-3.json', '#floor3');
+    
+        displayFloorplanUnits('./assets/floorplan/sme3-g.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/sme3-1.json', '#floor1');
+    
+        displayFloorplanUnits('./assets/floorplan/12-g.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/12-1.json', '#floor1');
+        displayFloorplanUnits('./assets/floorplan/12-2.json', '#floor2');
+        displayFloorplanUnits('./assets/floorplan/12-3.json', '#floor3');
+        displayFloorplanUnits('./assets/floorplan/12-4-5.json', '#floor4');
+        displayFloorplanUnits('./assets/floorplan/12-6.json', '#floor6');
+    
+        displayFloorplanUnits('./assets/floorplan/12a-g.json', '#floorG');
+        displayFloorplanUnits('./assets/floorplan/12a-1.json', '#floor1');
+        displayFloorplanUnits('./assets/floorplan/12a-2.json', '#floor2');
+        displayFloorplanUnits('./assets/floorplan/12a-3-9.json', '#floor3');
+        displayFloorplanUnits('./assets/floorplan/12a-10.json', '#floor10');
+        displayFloorplanUnits('./assets/floorplan/12a-11.json', '#floor11');
       })
     </script>
   </body>
