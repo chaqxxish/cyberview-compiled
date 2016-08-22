@@ -1,12 +1,12 @@
-{"12": {
+{"12A": {
     "units": [
       {
-        "unit": "12-6-01",
+        "unit": "12A-6-01",
         "type": "A1", 
         "area": "699 sq. ft.",
         "layout": "View Diagram",
         "rental": "RM1748",
-        "vacant": false
+        "vacant": true
       }
     ]
   }
